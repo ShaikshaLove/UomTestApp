@@ -1,16 +1,16 @@
- server:
-  port: 6273
-  
-  
- spring:
-  application:
-    name: UOM-TEST-APP
-    
- eureka:
+#Setting up a server port number
+server:
+ port: 2343
+ 
+# Making UomService as a eureka client to eureka server
+#in otherwords registering UomService in Wharehouse Eureka Rigistry
+
+eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl: 
      defaultZone: http://sa-warehouse-service-registry-sandbox.mymicroapps.net/eureka/
+     
   instance:
-    hostname: ${vcap.application.uris[0]}
+    ip-address: 10.0.4.203
