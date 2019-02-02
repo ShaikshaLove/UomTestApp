@@ -13,4 +13,4 @@
     serviceUrl: 
      defaultZone: http://sa-warehouse-service-registry-sandbox.mymicroapps.net/eureka/
   instance:
-    hostname: localhost
+    hostname: ${vcap.application.uris[0]}
