@@ -14,3 +14,7 @@ eureka:
      
   instance:
     instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+  
+spring:
+ application:
+  name: UOM-SERVICE-APP
