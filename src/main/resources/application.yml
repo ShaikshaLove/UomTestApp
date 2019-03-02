@@ -13,4 +13,4 @@ eureka:
      defaultZone: http://sa-warehouse-service-registry-sandbox.mymicroapps.net/eureka/
      
   instance:
-    ip-address: 10.0.4.203
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}}}
